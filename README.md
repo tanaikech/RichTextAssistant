@@ -377,6 +377,11 @@ function sample() {
 
 As a limitation, in the current stage, the lists and images cannot be used with the rich text of Google Spreadsheet. So please use only the texts with the text style.
 
+
+# Sample scripts
+
+- You can see the sample scripts at "[Enriched Management of Rich Text on Google Spreadsheet using Google Apps Script](https://tanaikech.github.io/2023/04/02/enriched-management-of-rich-text-on-google-spreadsheet-using-google-apps-script/)".
+
 ---
 
 <a name="licence"></a>
