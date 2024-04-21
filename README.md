@@ -406,4 +406,8 @@ As a limitation, in the current stage, the lists and images cannot be used with 
 
   1. Initial release.
 
+- v1.0.1 (April 22, 2024)
+
+  1. From [oshliaer's report](https://github.com/tanaikech/RichTextAssistant/issues/1), a bug was removed. In the current stage, when RichTextValueBuilder is used, it seems that when `setTextStyle` is used after `setLinkUrl`, the style of the hyperlink is removed while the link is kept. So, it is required to set `setLinkUrl` after `setTextStyle`.
+
 [TOP](#top)

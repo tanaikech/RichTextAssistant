@@ -257,7 +257,7 @@ class Main {
     const text = currentStyles.map(({ text }) => text).join("");
     const newRichTextValue = SpreadsheetApp.newRichTextValue().setText(text);
     currentStyles.forEach(({ link, style }, i) =>
-      newRichTextValue.setLinkUrl(i, i + 1, link).setTextStyle(i, i + 1, style)
+      newRichTextValue.setTextStyle(i, i + 1, style).setLinkUrl(i, i + 1, link)
     );
     return newRichTextValue.build();
   }
@@ -266,7 +266,7 @@ class Main {
     const text = ar.map(({ text }) => text).join("");
     const newRichTextValue = SpreadsheetApp.newRichTextValue().setText(text);
     ar.forEach(({ link, style }, i) =>
-      newRichTextValue.setLinkUrl(i, i + 1, link).setTextStyle(i, i + 1, style)
+      newRichTextValue.setTextStyle(i, i + 1, style).setLinkUrl(i, i + 1, link)
     );
     return newRichTextValue.build();
   }
@@ -347,7 +347,7 @@ class Main {
     object.obj.forEach(({ link, style }, i) => {
       const st = SpreadsheetApp.newTextStyle();
       Object.entries(style).forEach(([k, v]) => st[`set${k}`](v));
-      rt.setLinkUrl(i, i + 1, link).setTextStyle(i, i + 1, st.build());
+      rt.setTextStyle(i, i + 1, st.build()).setLinkUrl(i, i + 1, link);
     });
     return rt.build();
   }
